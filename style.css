@@ -1,6 +1,6 @@
 body{
   margin-top: -8px;
-  background: radial-gradient(ellipse, rgb(236, 159, 159), transparent, rgb(240, 213, 213)) rgb(241, 146, 187);
+  background: linear-gradient(to bottom right, rgb(253, 253, 178), rgb(240, 158, 211));
  
 }
 .container{
@@ -17,18 +17,17 @@ body{
 
 }
 
-/*make nav elements udda*/
-header nav ul li {
-  display: inline;
- 
-}
+
 main {
   display: flex;/*partioned*/
-  justify-content:space-around;
+
 }
 .left, .right {
   flex: 1;
+  
 }
+
+
 .right img {
     max-width: 100%;
     margin-top:-15px;
@@ -40,11 +39,17 @@ main {
 .left p{
   font-size: large;
 }
+/*make nav elements udda*/
+header nav ul li {
+  display: inline;
+  list-style-type: none;
+ 
+}
 header nav ul {
   border:20px solid #fc6969;
   margin-top:  auto;
   overflow: hidden;
-  justify-content: space-evenly;
+  justify-content: space-evenly; /*distribute space equally in a flex*/
   background-color:#fc6969;/*final colour*/
   display: flex;
 }
@@ -100,12 +105,13 @@ header nav ul a{
   border: 2px solid #fc6969;
   width: 500px; 
   height: 270px;
-  margin: 100px;
+  margin: 80px;
+  margin-top: 40%;
   padding: 0%;
   display:grid;
   justify-content:flex-start;
   align-items:flex-start;
-  margin-left: 5%;
+  margin-left: -10px;
 }
 /*
 .picture{
@@ -147,14 +153,13 @@ header nav ul a{
 }*/
 
 .picture{
-  margin: 10%;
-  margin-left: -50px;
-  margin-right: 100px;
-  margin-top: 50px;
+  margin: 30%;
+  
   display: grid;
   grid-template-columns: 130px auto;
   grid-template-rows: 210px auto;
-    gap: 10px;
+  justify-content: center;
+    gap: 2px 20px;
     width: 420px; 
     height: 520px; 
     overflow: hidden;
@@ -171,3 +176,11 @@ header nav ul a{
 .button:hover {
   background-color: #8d2626; /* Darker shade of button color on hover */
 }
+@media screen and (max-width: px) {
+  /* Adjust styles for smaller screens */
+}
+
+@media screen and (min-width: 200px) {
+  /* Adjust styles for larger screens */
+}
+
